@@ -1,0 +1,10 @@
+#define CATCH_CONFIG_MAIN
+
+#include "test/catch.hpp"
+#include "ReadingsFromRange.h"
+#include <bits/stdc++.h>
+
+TEST_CASE("Test readings from ranges")
+{
+
+}
