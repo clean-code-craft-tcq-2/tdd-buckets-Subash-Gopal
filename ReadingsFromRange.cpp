@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int getReadingsForTheRange(int chargingSessionSamples[], int lowerBound, int upperBound) {
+int getReadingsForTheRange(vector<int> chargingSessionSamples, int lowerBound, int upperBound) {
   int sizeofchargingSessionSamples = chargingSessionSamples.size();
   int countOfReadingsFromRange = 0;
   for(int i = 0; i < sizeofchargingSessionSamples; i++) {
