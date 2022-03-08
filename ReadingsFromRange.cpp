@@ -6,7 +6,7 @@
 using namespace std;
 
 int getReadingsForTheRange(int chargingSessionSamples[], int lowerBound, int upperBound) {
-  int sizeofchargingSessionSamples = sizeof((chargingSessionSamples) / sizeof(chargingSessionSamples[0]));
+  int sizeofchargingSessionSamples = chargingSessionSamples.size();
   int countOfReadingsFromRange = 0;
   for(int i = 0; i < sizeofchargingSessionSamples; i++) {
     if((chargingSessionSamples[i] >= lowerBound) && (chargingSessionSamples[i] <= upperBound)) {
