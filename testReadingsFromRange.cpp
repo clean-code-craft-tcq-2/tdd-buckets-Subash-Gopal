@@ -11,3 +11,10 @@ TEST_CASE("Test readings from ranges")
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, 3, 5) == 4);
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, 10, 12) == 3);
 }
+
+TEST_CASE("Test readings for empty samples")
+{
+  vector <int> chargingSessionSamples = {};   
+  REQUIRE(getReadingsForTheRange(chargingSessionSamples, 3, 5) == -1);
+  REQUIRE(getReadingsForTheRange(chargingSessionSamples, 10, 12) == -1);
+}
