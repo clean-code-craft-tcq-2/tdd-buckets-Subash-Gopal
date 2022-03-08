@@ -1,4 +1,4 @@
 #include <iostream>
 #include<string>
 using namespace std;
-int getReadingsFromRanges(const int *chargingSessionSamples, int lowerBound, int upperBound);
+int getReadingsForTheRange(const int *chargingSessionSamples, int lowerBound, int upperBound);
