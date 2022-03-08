@@ -3,6 +3,7 @@
 #include "test/catch.hpp"
 #include "ReadingsFromRange.h"
 #include <bits/stdc++.h>
+#include <vector>
 
 TEST_CASE("Test readings from ranges")
 {
