@@ -22,7 +22,7 @@ int getReadingsForTheRange(vector<int> chargingSessionSamples, int lowerBound, i
 int countReadingsForRange(vector<int> chargingSessionSamples, int lowerBound, int upperBound) {
 {
     int countOfReadingsFromRange = 0;
-    for(int i = 0; i <  chargingSessionSamples.size(); i++) {
+    for(int i = 0; i < chargingSessionSamples.size(); i++) {
       if((chargingSessionSamples[i] >= lowerBound) && (chargingSessionSamples[i] <= upperBound)) {
         countOfReadingsFromRange++;
       }
