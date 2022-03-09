@@ -37,6 +37,7 @@ TEST_CASE("Test readings count with invalid ranges values")
 {
   vector <int> chargingSessionSamples = {3, 3, 5, 4, 10, 11, 12};   
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, -1, -5) ==  0);
+   REQUIRE(getReadingsForTheRange(chargingSessionSamples, -5, -1) ==  0);
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, 14, 100) == 0);
 }
 
