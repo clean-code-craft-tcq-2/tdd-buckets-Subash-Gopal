@@ -52,6 +52,6 @@ TEST_CASE("Test readings count with same value in both lower bound and upper bou
 {
   vector <int> chargingSessionSamples = {3, 3, 5, 4, 10, 11, 12};   
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, 5, 5) ==  -1);
-  REQUIRE(getReadingsForTheRange(chargingSessionSamples, 3, 3) == -1); returns invalid input
+  REQUIRE(getReadingsForTheRange(chargingSessionSamples, 3, 3) == -1); //returns invalid input
 }
 
