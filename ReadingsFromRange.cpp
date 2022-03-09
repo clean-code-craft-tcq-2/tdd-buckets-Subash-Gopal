@@ -23,7 +23,7 @@ int getReadingsForTheRange(vector<int> chargingSessionSamples, int lowerBound, i
 
 void printToConsole(int lowerBound, int upperBound,int readingCount)
 {
-  cout<<"Range "<<lowerBound << "-" <<upperBound << ", " << "readingCount - "<<readingCount;
+  cout<<"Range "<<lowerBound << "-" <<upperBound << ", " << "readingCount - "<<readingCount <<"\n";
 }
 
 int countReadingsForRange(vector<int> chargingSessionSamples, int lowerBound, int upperBound) {
