@@ -7,7 +7,7 @@
 using namespace std;
 
 bool isPreConditionsMet(int sizeofChargingSessionSamples, int lowerBound, int upperBound) {
-  return ((sizeofChargingSessionSamples > 1) && (lowerBound < upperBound))? true : false;
+  return ((sizeofChargingSessionSamples > 1) && ( (0 <= lowerBound) && (lowerBound < upperBound)))? true : false;
 }
   
 
