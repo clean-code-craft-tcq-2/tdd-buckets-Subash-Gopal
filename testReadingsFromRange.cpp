@@ -18,3 +18,11 @@ TEST_CASE("Test readings for empty samples")
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, 3, 5) == -1);
   REQUIRE(getReadingsForTheRange(chargingSessionSamples, 10, 12) == -1);
 }
+
+TEST_CASE("Test readings for less than 2 samples")
+{
+  vector <int> chargingSessionSamples = {1};   
+  REQUIRE(getReadingsForTheRange(chargingSessionSamples, 3, 5) == -1);
+  REQUIRE(getReadingsForTheRange(chargingSessionSamples, 10, 12) == -1);
+}
+
