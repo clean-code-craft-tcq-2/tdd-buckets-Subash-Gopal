@@ -14,9 +14,16 @@ bool isPreConditionsMet(int sizeofChargingSessionSamples, int lowerBound, int up
 int getReadingsForTheRange(vector<int> chargingSessionSamples, int lowerBound, int upperBound) {
   int sizeofChargingSessionSamples = chargingSessionSamples.size();
   if(isPreConditionsMet(sizeofChargingSessionSamples,lowerBound,upperBound) == true) {
-    return countReadingsForRange(chargingSessionSamples,lowerBound,upperBound);
+    int readingCount = countReadingsForRange(chargingSessionSamples,lowerBound,upperBound);
+    printToConsole(lowerBound, upperBound,readingCount);
+    return readingCount;    
   }  
   return -1;  
+}
+
+void printToConsole(int lowerBound, int upperBound,int readingCount)
+{
+  cout<<"Range "<<lowerBound << "-" <<upperBound << ", " << "readingCount - "<<readingCount;
 }
 
 int countReadingsForRange(vector<int> chargingSessionSamples, int lowerBound, int upperBound) {
