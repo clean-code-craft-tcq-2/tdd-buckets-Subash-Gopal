@@ -6,14 +6,14 @@
 
 using namespace std;
 
-bool isPreConditionsMet(int sizeofChargingSessionSamples) {
-  return (sizeofChargingSessionSamples > 1)? true : false;
+bool isPreConditionsMet(int sizeofChargingSessionSamples, int lowerBound, int upperBound) {
+  return ((sizeofChargingSessionSamples > 1) && (lowerBound <= upperBound)? true : false;
 }
   
 
 int getReadingsForTheRange(vector<int> chargingSessionSamples, int lowerBound, int upperBound) {
   int sizeofChargingSessionSamples = chargingSessionSamples.size();
-  if(isPreConditionsMet(sizeofChargingSessionSamples) == true) {
+  if(isPreConditionsMet(sizeofChargingSessionSamples,lowerBound,upperBound) == true) {
     return countReadingsForRange(chargingSessionSamples,lowerBound,upperBound);
   }  
   return -1;  
